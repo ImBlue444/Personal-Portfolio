@@ -4,7 +4,7 @@ import Image from "next/image";
 function HomeBio() {
   return (
     <div className="bg-black">
-      <h2 className="select-none font-PermanentMarker text-center text-white p-20 text-5xl">
+      <h2 className="select-none font-PermanentMarker text-center text-white p-20 text-4xl">
         Hi! im Dennis Badagliacca
         <br />
         <br />

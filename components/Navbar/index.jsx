@@ -47,19 +47,6 @@ function Navbar() {
             </a>
           </Link>
         </li>
-        <li>
-          <Link href="./contact">
-            <a
-              className={`transition duration-150 ${
-                router.pathname == "/contact"
-                  ? "text-cyan-400 border-b-2 border-transparent border-cyan-400"
-                  : null
-              }  text-white hover:text-cyan-400 border-b-2 border-transparent hover:border-cyan-400`}
-            >
-              Contact
-            </a>
-          </Link>
-        </li>
       </ul>
     </div>
   );

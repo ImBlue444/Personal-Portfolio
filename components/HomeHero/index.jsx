@@ -12,10 +12,10 @@ function HomeHero() {
   const [person, setPerson] = useState([0]);
 
   const [quotes, setQuotes] = useState([
-    "There is always one more bug to fix. - Ellen Ullman",
-    "If debugging is the process of removing bugs, then programming must be the process of putting them in. - Sam Redwine",
-    "If, at first, you do not succeed, call it version 1.0. - Khayri R.R. Woulfe",
-    "Programming is learned by writing programs. - Brian Kernighan",
+    "There is always one more bug to fix.",
+    "If debugging is the process of removing bugs, then programming must be the process of putting them in.",
+    "If, at first, you do not succeed, call it version 1.0.",
+    "Programming is learned by writing programs.",
   ]);
 
   const [quoteEngine, setQuoteEngine] = useState(0);
@@ -31,17 +31,22 @@ function HomeHero() {
 
   return (
     <div className="bg-black">
+      <div className="flex justify-center">
+        <h1 className=" select-none text-white text-md absolute z-10 text-center text-md translate-y-8 md:text-4xl md:translate-y-28 lg:text-6xl lg:translate-y-72">
+          <i>{quotes[quoteEngine]}</i>
+        </h1>
+      </div>
       <Image
+        className="z-0 "
         src="/HeroImage.jpg"
         alt="HeroImage"
         width="2000"
-        height="750"
+        height="850"
         layout="responsive"
       />
-      <h1 className=" select-none text-white absolute -translate-y-48 ml-10 mt-20 md:text-4xl md:mt-0 lg:-translate-y-60 xl:-translate-y-80 xl:text-6xl 2xl:-translate-y-96 2xl:text-7xl">
-        <i>{quotes[quoteEngine]}</i>
-      </h1>
-      <h2 className=" font-AnticDidone text-white">{people[person]}</h2>
+      <h2 className="font-AnticDidone z-10 text-lg text-right text-md -translate-x-2 -translate-y-10 text-white md:text-4xl md:-translate-y-16">
+        {people[person]}
+      </h2>
     </div>
   );
 }
