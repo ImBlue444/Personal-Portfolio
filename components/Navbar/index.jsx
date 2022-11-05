@@ -1,50 +1,23 @@
 import React from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import { Link } from "react-scroll";
 
 function Navbar() {
-  const router = useRouter();
-
   return (
-    <div>
+    <div className="sticky top-0 z-20">
       <ul className="flex bg-black justify-around p-5 border-b-2  ">
-        <li>
-          <Link href="/">
-            <a
-              className={`transition duration-150 ${
-                router.pathname == "/"
-                  ? "text-cyan-400 border-b-2 border-transparent border-cyan-400"
-                  : null
-              }  text-white hover:text-cyan-400 border-b-2 border-transparent hover:border-cyan-400`}
-            >
-              Home
-            </a>
+        <li className=" cursor-pointer  transition duration-15 text-white hover:text-cyan-400 border-b-2 border-transparent hover:border-cyan-400 ">
+          <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
+            Home
           </Link>
         </li>
-        <li>
-          <Link href="./skills">
-            <a
-              className={`transition duration-150 ${
-                router.pathname == "/skills"
-                  ? "text-cyan-400 border-b-2 border-transparent border-cyan-400"
-                  : null
-              }  text-white hover:text-cyan-400 border-b-2 border-transparent hover:border-cyan-400`}
-            >
-              Skills
-            </a>
+        <li className=" cursor-pointer  transition duration-15 text-white hover:text-cyan-400 border-b-2 border-transparent hover:border-cyan-400 ">
+          <Link to="skills" spy={true} smooth={true} offset={50} duration={500}>
+            Skills
           </Link>
         </li>
-        <li>
-          <Link href="./about">
-            <a
-              className={`transition duration-150 ${
-                router.pathname == "/about"
-                  ? "text-cyan-400 border-b-2 border-transparent border-cyan-400"
-                  : null
-              }  text-white hover:text-cyan-400 border-b-2 border-transparent hover:border-cyan-400`}
-            >
-              About
-            </a>
+        <li className=" cursor-pointer  transition duration-15 text-white hover:text-cyan-400 border-b-2 border-transparent hover:border-cyan-400 ">
+          <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
+            About
           </Link>
         </li>
       </ul>

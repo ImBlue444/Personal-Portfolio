@@ -30,7 +30,7 @@ function HomeHero() {
   }, 5000);
 
   return (
-    <div className="bg-black">
+    <div className="bg-black pt-20">
       <div className="flex justify-center">
         <h1 className=" select-none text-white text-md absolute z-10 text-center text-md translate-y-8 md:text-4xl md:translate-y-28 lg:text-6xl lg:translate-y-72">
           <i>{quotes[quoteEngine]}</i>

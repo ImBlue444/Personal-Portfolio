@@ -1,11 +1,11 @@
 import React from "react";
-import { useState } from "react";
 
 function SkillSection() {
   return (
-    <div className="bg-slate-800 text-white text-3xl py-4 p-4">
+    <div className="bg-black text-white text-3xl py-4 pt-20">
+      <br />
+      <h2 className="xl:text-7xl text-4xl text-center">Fundamentals</h2>
       <ul>
-        <h2 className="xl:text-7xl text-4xl text-center">Fundamentals</h2>
         <br />
         <li>HTML</li>
         <div className="w-full bg-gray-200 h-5 mb-6">
